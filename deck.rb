@@ -6,10 +6,6 @@ class Deck
     @suit = ["Hearts", "Clubs", "Diamonds", "Spades"]
     @cards = 52.times.map {Card.new(@rank.sample, @suit.sample)}
   end
-
-  def choose_card
-    @cards.pop
-  end
 end
 
 class Card
